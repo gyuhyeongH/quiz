@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div >
+        <textarea class="form-control" id="my-title"></textarea>
+        <textarea class="form-control" id="my-content"></textarea>
+        <select id="my-cate">
+            {% for ct in category %}
+                <option value="{{ ct }}">{{ ct.category_name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float:right;">작성하기</button>
+</form>
+</body>
+</html>
